@@ -1,0 +1,74 @@
+1) Que représente un formulaire dans une application Flutter ?
+Un formulaire permet à l’utilisateur de saisir des informations et de les envoyer ou les valider avant traitement.
+
+2) Pourquoi utilise-t-on Form et GlobalKey<FormState> ?
+Ils permettent de regrouper les champs et de vérifier l’état complet et valide du formulaire.
+
+3) À quoi sert TextEditingController ?
+Il permet de récupérer, modifier et contrôler le texte saisi dans un champ de formulaire.
+
+4) Pourquoi faut-il valider l’email ?
+Parce que l’application doit vérifier que le champ contient une adresse bien formée avant de continuer.
+
+5) Quelle règle est utilisée pour un email simple ?
+Le champ ne doit pas être vide et il doit contenir au moins un symbole @.
+
+6) Qu’est-ce qu’un validator ?
+C’est une fonction qui renvoie un message d’erreur si la valeur saisie n’est pas conforme.
+
+7) Pourquoi masque-t-on le mot de passe ?
+Pour ne pas afficher la donnée sensible à l’écran et protéger la confidentialité de l’utilisateur.
+
+8) Que fait obscureText ?
+Il remplace les caractères saisis par des points ou des astérisques pour cacher le mot de passe.
+
+9) Comment vérifier qu’un mot de passe est suffisant ?
+On contrôle sa longueur, par exemple au minimum 8 caractères.
+
+10) Pourquoi utiliser SafeArea ?
+Pour éviter que le contenu soit masqué par les bordures ou les éléments de l’écran du téléphone.
+
+11) Que fait SingleChildScrollView ?
+Il permet au contenu de défiler verticalement quand le clavier ou la petite taille de l’écran réduit l’espace disponible.
+
+12) Pourquoi utiliser ConstrainedBox(maxWidth: 420) ?
+Pour limiter la largeur du formulaire et garder une interface lisible sur mobile et tablette.
+
+13) Quelle est l’utilité de LayoutBuilder ?
+Il permet d’adapter l’interface selon la taille de l’écran ou de la zone disponible.
+
+14) Comment fonctionne Material 3 ?
+Il apporte une esthétique moderne avec des couleurs cohérentes, des ombres légères et des composants plus ergonomiques.
+
+15) Pourquoi utiliser ColorScheme.fromSeed ?
+Parce que cela génère facilement une palette de couleurs harmonieuse et cohérente pour l’application.
+
+16) Que signifie un thème clair et un thème sombre ?
+Ce sont deux modes visuels qui changent les couleurs d’arrière-plan, de texte et de composants selon le choix de l’utilisateur.
+
+17) Pourquoi utiliser GridView.count dans HomePage ?
+Parce que cela organise les cartes en colonnes selon la largeur disponible et rend l’interface adaptative.
+
+18) Que représente un SnackBar ?
+Un SnackBar donne un retour immédiat à l’utilisateur après une action, comme une validation ou un message de confirmation.
+
+19) Pourquoi est-il important de libérer les TextEditingController ?
+Pour éviter les fuites de mémoire et garder l’application propre et stable.
+
+20) Que doit-on faire avant de soumettre un formulaire ?
+Il faut vérifier tous les champs avec les validateurs, puis seulement agir si le formulaire est valide.
+
+21) Quel bénéfice apporte la validation côté formulaire ?
+Elle améliore la qualité de la saisie et évite les erreurs avant la soumission.
+
+22) Comment peut-on tester une interface mobile et tablette ?
+On peut simuler des largeurs différentes comme 320 px pour mobile et 820 px pour tablette.
+
+23) Pourquoi garder HomePage comme écran principal ?
+Parce que c’est l’écran d’accueil de l’application et il faut conserver la structure du projet existant.
+
+24) Que faut-il conserver de TP1, TP2 et TP3 ?
+Les pages existantes doivent rester fonctionnelles et non supprimées : HomePage, CoursesPage, ProfilePage et les éléments déjà réalisés.
+
+25) Pourquoi ajouter un bouton de visibilité sur les mots de passe ?
+Parce que cela aide l’utilisateur à vérifier la saisie sans compromettre la confidentialité en affichant le mot de passe de manière temporaire.

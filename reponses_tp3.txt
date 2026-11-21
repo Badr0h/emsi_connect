@@ -1,0 +1,23 @@
+1) Qu'est-ce qu'une ListView ?
+Une ListView est un widget Flutter qui permet d'afficher une liste d'éléments de manière verticale ou horizontale. Elle est très utile pour afficher plusieurs cartes, lignes ou composants sans écrire manuellement chacun d'eux.
+
+2) Pourquoi utilise-t-on Card et ListTile ?
+On les utilise pour présenter les informations de manière propre, lisible et uniforme. Card donne un cadre visuel, tandis que ListTile organise le contenu avec un titre, un sous-titre, une icône et une action.
+
+3) Quel est l'intérêt de ListView.builder ?
+ListView.builder est plus performant car il ne construit que les éléments visibles à l'écran. Il fonctionne très bien avec une liste de données et utilise itemCount pour connaître le nombre d'éléments, puis modules[index] pour afficher le bon élément.
+
+4) Que fait onTap dans un ListTile ?
+onTap permet d'exécuter une action lorsqu'on clique sur un élément, par exemple afficher un SnackBar avec le nom du module sélectionné.
+
+5) Pourquoi utiliser Expanded dans une Row ?
+Expanded permet de répartir l'espace disponible de manière proportionnelle entre plusieurs widgets. Cela évite les débordements et garde des éléments de même largeur.
+
+6) Comment adapter une interface à un petit écran ?
+En utilisant des espaces réduits, des textes plus courts si nécessaire, des éléments empilés verticalement et des widgets flexibles comme Expanded, ListView et SingleChildScrollView.
+
+7) Comment ajouter un module supplémentaire sans créer une nouvelle Card ?
+Il suffit d'ajouter un nouvel objet dans la liste de données, puis de conserver le même widget ListTile dans le ListView.builder. Le code se réutilise automatiquement.
+
+8) Pourquoi utiliser SnackBar ?
+Le SnackBar donne un retour visuel immédiat à l'utilisateur après un clic, par exemple pour confirmer qu'un module a bien été sélectionné.
